@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Technologies</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: white
+            color: rgb(11, 11, 11);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 4rem; /* Increased font size */
+            text-align: center; /* Center the header */
+            color: rgb(11, 11, 11); /* Heading color */
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #2c2c2c;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #0d9141;
+        }
+
+        .hero {
+            background: url("index.jpg") no-repeat center center/cover;
+            height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(11, 11, 11);
+            text-shadow: 2px 2px 5px rgb(11, 11, 11);
+        }
+
+        .hero h2 {
+            font-size: 4rem; /* Increased font size */
+            text-align: center; /* Center the heading */
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            text-align: center; /* Center the headings */
+            color: rgb(11, 11, 11); /* New color for section headings */
+            font-size: 2.5rem; /* Increased font size */
+            margin-bottom: 20px;
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .experience, .modules {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            text-align: center; /* Center the content in the sections */
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgb(11, 11, 11);
+            flex: 1 1 calc(30% - 20px);
+            padding: 20px;
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 150px; /* Increased width */
+            height: 150px; /* Increased height */
+            margin-bottom: 15px;
+        }
+        
+
+        .card h3 {
+            margin: 10px 0;
+            font-size: 1.5rem; /* Increased font size for card heading */
+            color: rgb(11, 11, 11); /* New color for card headings */
+        }
+
+        footer {
+            background: #444;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: rgb(11, 11, 11);
+            text-decoration: none;
+        }
+
+        #contact {
+            text-align: center;
+            padding: 40px 20px;
+            background: #f9f9f9;
+            border-top: 2px solid #ddd;
+        }
+
+        #contact h2 {
+            color: rgb(11, 11, 11);
+            font-size: 2.5rem; /* Increased font size */
+            margin-bottom: 20px;
+        }
+
+        #contact p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        #contact button {
+            padding: 15px 30px;
+            background-color: #0d9141;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }.info {
+            display: none;
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .button {
+            background-color: rgb(11, 11, 11);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #0d9141;
+        }
+        ul {
+            text-align: left;
+            padding-left: 20px;
+        }
+    </style>
+    <script>
+        function toggleInfo() {
+            var infoSection = document.getElementById("info");
+            if (infoSection.style.display === "none" || infoSection.style.display === "") {
+                infoSection.style.display = "block";
+            } else {
+                infoSection.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>UKG PRO WFM Training</h1>
+        <p>Unlock Your Potential with UKG Pro WFM Training</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About Trainer</a>
+        <a href="#experience">Experience</a>
+        <a href="#modules">Modules</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <div class="text-container">
+            <h2>Unlock Your Potential with Expert Training</h2>
+        </div>
+    </div>
+    
+
+    <div class="container">
+        <section id="about" class="section about">
+            <h2>What is UKG Pro WFM?</h2>
+            <p>UKG Pro WFM (formerly known as Kronos Workforce Dimensions) is a cutting-edge workforce management solution that enables organizations to efficiently manage employee time, attendance, scheduling, compliance, and labor analytics. Designed to optimize workforce productivity, it automates HR processes, reduces manual effort, and ensures seamless integration with payroll and HCM systems. Businesses across industries rely on UKG Pro WFM to enhance efficiency, improve employee engagement, and drive operational excellence.</p>
+            
+            <hr>
+            <h2>About the Trainer</h2>
+            <img src="trainer.jpg" alt="Experience 1" style="width: 200; height: 150;">
+            <p> 
+                I am a seasoned UKG Pro WFM trainer with extensive hands-on experience in implementing and configuring UKG Pro WFM solutions. I do specialize in delivering in-depth training on all UKG Pro WFM modules, equipping professionals with practical knowledge to enhance their careers.
+            </p>
+            <section id="about" class="section about">
+                <button class="button" onclick="toggleInfo()">Why Learn from Me?</button>
+                
+                <div id="info" class="info">
+                    <ul>
+                        <li><strong>Extensive Experience:</strong> Over 15 years in IT and workforce management, specialising in UKG Pro WFM.</li>
+                        <li><strong>Comprehensive Training:</strong> Covers all UKG Pro WFM modules with real-world examples and case studies, addressing both basic and advanced functionalities.</li>
+                        <li><strong>Practical Learning Approach:</strong> Hands-on exercises, live demonstrations, and interactive sessions.</li>
+                        <li><strong>Personalised Support:</strong> One-on-one or group mentorship, along with doubt-clearing sessions to ensure a deep understanding.</li>
+                        <li><strong>Customised Training:</strong> Tailored curriculum designed to meet your needs or your organisation’s specific needs, ensuring relevance to your unique workflows and objectives.</li>
+                        <li><strong>Up-to-Date Expertise:</strong> Staying current with the latest UKG Pro WFM updates and best practices to help you benefit from the most recent advancements in workforce management technology.</li>
+                    </ul>
+                </div>
+            </section>
+        <hr>
+        <h2 style="text-align: center; font-size: 2.5rem;">Training Experience</h2>
+        <section id="experience" class="section experience">
+            <div class="card">
+                <img src="advance.jpg" alt="Experience 1">
+                <h3>15+ Years in Tech</h3>
+                <p>Extensive experience in IT and Workforce Management.</p>
+            </div>
+            <div class="card">
+                <img src="exp.png" alt="Experience 2">
+                <h3>Workshops</h3>
+                <p> I have worked with numerous organizations to streamline workforce processes using UKG solutions.</p>
+            </div>
+            <div class="card">
+                <img src="hands.png" alt="Experience 3">
+                <h3>certification</h3>
+                <p> I am a certified UKGPRO WFM consultant.</p>
+            </div>
+        </section>
+        <hr>
+        <h2 style="text-align: center; font-size: 2.5rem;">Training Modules</h2>
+        <section id="modules" class="section modules">
+            <div class="card">
+                <h3>Timekeeping</h3>
+                <p>Efficient tracking of employee work hours and payroll management.</p>
+            </div>
+            <div class="card">
+                <h3>Accruals</h3>
+                <p> Automated leave and vacation tracking with precise accrual calculations.</p>
+            </div>
+            <div class="card">
+                <h3>Advanced Scheduler</h3>
+                <p>Optimized workforce scheduling to reduce labor costs.</p>
+            </div>
+            <div class="card">
+                <h3>Attendance & Exception Management</h3>
+                <p>Identification and resolution of attendance-related issues.</p>
+            </div>
+            <div class="card">
+                <h3>Leave Management</h3>
+                <p>Simplified leave requests, approvals, and compliance tracking.</p>
+            </div>
+            <div class="card">
+                <h3>UDM (Universal Data Manager)</h3>
+                <p> Efficient management of large-scale data imports and exports.</p>
+            </div>
+            <div class="card">
+                <h3>Attestation</h3>
+                <p>Ensuring compliance with labor laws and employee agreements.</p>
+            </div>
+            <div class="card">
+                <h3>Analytics & Reporting</h3>
+                <p> Generating actionable workforce insights through detailed analytics.</p>
+            </div>
+            <div class="card">
+                <h3>DataHub</h3>
+                <p>Centralized data management for improved reporting and decision-making.</p>
+            </div>
+            <div class="card">
+                <h3>Boomi Integrations</h3>
+                <p>Seamless data integration across HR and payroll platforms.</p>
+            </div>
+            <div class="card">
+                <h3>Custom Reporting (BIRT Studio & Designer)</h3>
+                <p>Creation and modification of reports tailored to business needs.</p>
+            </div>
+        </section>
+        <section id="contact" class="section contact">
+            <h2>Contact Us</h2>
+            <b>email id : ukgtraining@gmail.com</b>
+            <p>Get Started Today!
+                Enhance your career with expert UKG Pro WFM training. Contact me to enroll in a comprehensive training program designed to boost your expertise and industry knowledge.</p>
+                <a href="https://api.whatsapp.com/send?phone=917674021729&text=Hello%20Training%20Technologies,%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" style="text-decoration: none;">
+                    <button>Contact Us on WhatsApp</button>
+                </a>                
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Training Technologies. Designed with <a href="#">passion</a>.</p>
+    </footer>
+</body>
+</html>
